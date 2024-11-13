@@ -616,6 +616,7 @@ require('lazy').setup({
       local servers = {
         -- clangd = {},
         -- gopls = {},
+        ruby_lsp = {},
         -- pyright = {},
         -- rust_analyzer = {},
         -- ... etc. See `:help lspconfig-all` for a list of all the pre-configured LSPs
@@ -877,7 +878,8 @@ require('lazy').setup({
       --  and try some other statusline plugin
       local statusline = require 'mini.statusline'
       -- set use_icons to true if you have a Nerd Font
-      statusline.setup { use_icons = vim.g.have_nerd_font }
+      -- statusline.setup { use_icons = vim.g.have_nerd_font }
+      statusline.setup()
 
       -- You can configure sections in the statusline by overriding their
       -- default behavior. For example, here we set the section for
