@@ -208,6 +208,9 @@ require('lazy').setup({
     },
   },
 
+  -- load direnv environments
+  { 'direnv/direnv.vim' },
+
   -- NOTE: Plugins can specify dependencies.
   --
   -- The dependencies are proper plugin specifications as well - anything
