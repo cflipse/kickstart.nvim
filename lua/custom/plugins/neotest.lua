@@ -10,7 +10,6 @@ return {
     },
     config = function()
       local neotest = require 'neotest'
-
       neotest.setup {
         adapters = {
           require 'neotest-rspec',
