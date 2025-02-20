@@ -182,7 +182,6 @@ return {
         html = {},
         ruby_lsp = {
           formatter = 'auto',
-          filetypes = { 'ruby' }, -- disable eruby
         },
         -- pyright = {},
         -- rust_analyzer = {},
