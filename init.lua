@@ -27,9 +27,16 @@ require('lazy').setup({
   -- require 'kickstart.plugins.lint',
   -- require 'kickstart.plugins.autopairs',
   -- require 'kickstart.plugins.neo-tree',
-
   -- { import = 'custom.plugins' },
   { import = 'custom.colorschemes' },
+  require 'custom.plugins.surround',
+  require 'custom.plugins.treesitter',
+  require 'custom.plugins.telescope',
+  require 'custom.plugins.autoformat',
+  require 'custom.plugins.mini',
+  require 'custom.plugins.git',
+  require 'custom.plugins.neotest',
+  require 'custom.plugins.which-key',
 }, {
   ui = {
     -- If you are using a Nerd Font: set icons to an empty table which will use the
