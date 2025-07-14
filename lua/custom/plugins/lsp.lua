@@ -17,9 +17,9 @@ return {
     dependencies = {
       -- Mason must be loaded before its dependents so we need to set it up here.
       -- NOTE: `opts = {} is the same as calling `require('mason').setup({})`
-      { 'williamboman/mason.nvim', opts = {} }, -- NOTE: Must be loaded before dependants
+      { 'mason-org/mason.nvim', opts = {} }, -- NOTE: Must be loaded before dependants
 
-      'williamboman/mason-lspconfig.nvim',
+      'mason-org/mason-lspconfig.nvim',
       'WhoIsSethDaniel/mason-tool-installer.nvim',
 
       -- Useful status updates for LSP.
@@ -200,6 +200,7 @@ return {
         -- clangd = {},
         gopls = {},
         html = {},
+        herb_ls = {},
         ruby_lsp = {
           formatter = 'auto',
         },
@@ -236,10 +237,10 @@ return {
       --    :Mason
       --
       --  You can press `g?` for help in this menu.
-      -- 
+      --
       -- `mason` had to be setup earlier: to configure its options see the
       -- `dependencies` table for `nvim-lspconfig` above.
-      -- 
+      --
       -- You can add other tools here that you want Mason to install
       -- for you, so that they are available from within Neovim.
       local ensure_installed = vim.tbl_keys(servers or {})

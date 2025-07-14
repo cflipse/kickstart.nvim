@@ -21,6 +21,7 @@ return {
         return {
           'bundle',
           'exec',
+          '--gemfile=Gemfile',
           'rspec',
           '--fail-fast',
         }
@@ -28,6 +29,7 @@ return {
         return {
           'bundle',
           'exec',
+          '--gemfile=Gemfile',
           'rspec',
         }
       end
