@@ -16,6 +16,7 @@ vim.opt.rtp:prepend(lazypath)
 require('lazy').setup({
   -- load direnv environments
   { 'direnv/direnv.vim' },
+  local_spec = true,
 
   -- NOTE: Next step on your Neovim journey: Add/Configure additional plugins for Kickstart
   --
