@@ -200,7 +200,6 @@ return {
         -- clangd = {},
         gopls = {},
         html = {},
-        herb_ls = {},
         ruby_lsp = {
           formatter = 'auto',
         },
@@ -263,6 +262,8 @@ return {
           end,
         },
       }
+
+      vim.lsp.enable 'herb_ls'
     end,
   },
 }
