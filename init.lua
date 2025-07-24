@@ -39,7 +39,10 @@ require('lazy').setup({
   require 'custom.plugins.autoformat',
   require 'custom.plugins.autocomplete',
   require 'custom.plugins.copilot',
-  -- require 'custom.plugins.lsp',
+
+
+  require 'plugins.lsp',
+
 
   { import = 'custom.colorschemes' },
 }, {
