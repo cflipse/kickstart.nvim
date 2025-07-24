@@ -28,7 +28,18 @@ require('lazy').setup({
   -- require 'kickstart.plugins.autopairs',
   -- require 'kickstart.plugins.neo-tree',
 
-  { import = 'custom.plugins' },
+  require 'custom.plugins.autoformat',
+  require 'custom.plugins.autocomplete',
+  require 'custom.plugins.copilot',
+  require 'custom.plugins.git',
+  require 'custom.plugins.lsp',
+  require 'custom.plugins.mini',
+  require 'custom.plugins.neotest',
+  require 'custom.plugins.surround',
+  require 'custom.plugins.telescope',
+  require 'custom.plugins.treesitter',
+  require 'custom.plugins.which-key',
+
   { import = 'custom.colorschemes' },
 }, {
   ui = {
