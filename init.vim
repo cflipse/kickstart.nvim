@@ -1,0 +1,1 @@
+/home/flip/.dotfiles/nvimrc
